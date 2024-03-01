@@ -1,0 +1,6 @@
+.contenedor__main{
+    @include conteiner-flex-column;
+    align-items: center;
+    background-color: #151515;
+    overflow: hidden;
+}

@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  overflow: hidden; }
+
+.contenedor__header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  height: 7rem;
+  background-image: url(/img/background.png);
+  border-bottom: 0.1rem solid yellow;
+  align-items: center;
+  overflow: hidden; }
+  .contenedor__header .header__promesa {
+    width: 40rem; }
+    .contenedor__header .header__promesa p {
+      color: white;
+      font-weight: 500; }
+      .contenedor__header .header__promesa p span {
+        background-color: yellow;
+        color: black;
+        font-weight: bold; }
+  .contenedor__header .header__timer {
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 15rem;
+    color: white; }
+
+.contenedor__main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #151515;
+  overflow: hidden; }
+
+.main__presentacion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  width: 70rem;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  overflow: hidden; }
+  .main__presentacion .logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold; }
+    .main__presentacion .logo span {
+      font-weight: lighter; }
+  .main__presentacion p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase; }
+    .main__presentacion p span {
+      color: yellow;
+      font-weight: bold; }
+  .main__presentacion .vsl video {
+    width: 50rem;
+    height: 25rem; }
+
+.main__socialProof {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden; }
+  .main__socialProof h3 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: 500; }
+    .main__socialProof h3 span {
+      background-color: yellow;
+      font-weight: bold;
+      color: black; }
+  .main__socialProof .socialProof__cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    width: 80%;
+    height: auto;
+    justify-content: space-around; }
+    .main__socialProof .socialProof__cards .card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-around;
+      height: 30rem;
+      width: 20rem;
+      align-items: center;
+      text-align: center;
+      padding: 0.5rem;
+      border: 0.2rem solid #204473;
+      border-radius: 1rem;
+      background-color: #0B1926; }
+      .main__socialProof .socialProof__cards .card img {
+        width: 90%;
+        height: 10rem; }
+      .main__socialProof .socialProof__cards .card h2 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500; }
+        .main__socialProof .socialProof__cards .card h2 span {
+          text-transform: uppercase;
+          background-color: #e3eeff;
+          font-weight: bold;
+          color: black;
+          border-radius: 0.5rem;
+          padding: 0.2rem 0.2rem; }
+      .main__socialProof .socialProof__cards .card p {
+        color: white;
+        text-transform: uppercase;
+        text-align: center; }
+      .main__socialProof .socialProof__cards .card button {
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: yellow;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.5rem;
+        color: black;
+        cursor: pointer;
+        text-align: center;
+        text-transform: uppercase;
+        border: none; }
+      .main__socialProof .socialProof__cards .card .btn:hover {
+        transition: 0.5s ease-in;
+        font-size: 1.5rem;
+        box-shadow: 0 0 5px yellow, 0 0 25px yellow,  0 0 50px yellow,  0 0 100px yellow; }
+
+.main__calendario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  height: 100vh;
+  overflow: hidden; }
+
+.contenedor__footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  background-image: url(/img/background.png);
+  overflow: hidden;
+  border-top: 0.1rem solid yellow; }
+  .contenedor__footer .footer__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    justify-content: center; }
+    .contenedor__footer .footer__info .footer__logo {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      width: auto;
+      align-items: center;
+      text-align: center;
+      justify-content: center; }
+      .contenedor__footer .footer__info .footer__logo img {
+        width: 5rem;
+        height: 5rem; }
+      .contenedor__footer .footer__info .footer__logo span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: yellow; }
+    .contenedor__footer .footer__info p {
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      font-weight: 500; }
+  .contenedor__footer .footer__redes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    flex: 2;
+    align-items: center; }
+    .contenedor__footer .footer__redes .redes__lista {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      justify-content: center;
+      width: 100%;
+      align-items: center; }
+      .contenedor__footer .footer__redes .redes__lista .lista__item {
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem; }
+        .contenedor__footer .footer__redes .redes__lista .lista__item i {
+          align-items: center;
+          justify-content: center;
+          color: black;
+          background-color: yellow;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 0.5rem;
+          font-size: 2rem;
+          text-align: center;
+          cursor: pointer; }
+        .contenedor__footer .footer__redes .redes__lista .lista__item i:hover {
+          transition: 0.5s ease-in;
+          font-size: 2.2rem;
+          box-shadow: 0 0 5px yellow, 0 0 25px yellow,  0 0 50px yellow,  0 0 100px yellow; }
+  .contenedor__footer .footer__newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+    text-align: center; }
+    .contenedor__footer .footer__newsletter span {
+      color: white;
+      font-weight: 500;
+      text-align: center;
+      text-transform: uppercase; }
+    .contenedor__footer .footer__newsletter .newsletter button {
+      font-size: 1.1rem;
+      font-weight: bold;
+      background-color: yellow;
+      border-radius: 0.5rem;
+      padding: 0.2rem 0.2rem;
+      color: black;
+      cursor: pointer;
+      text-align: center;
+      text-transform: uppercase;
+      border: none; }

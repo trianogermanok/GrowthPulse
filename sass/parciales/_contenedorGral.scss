@@ -1,0 +1,4 @@
+.contenedor{
+    @include conteiner-flex-column;
+    overflow: hidden;
+}

@@ -1,0 +1,5 @@
+.main__calendario{
+    @include conteiner-flex-column;
+    height: 100vh;
+    overflow: hidden;
+}

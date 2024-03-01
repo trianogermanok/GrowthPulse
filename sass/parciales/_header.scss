@@ -1,0 +1,31 @@
+.contenedor__header{
+    @include conteiner-flex-row;
+    height: 7rem;
+    background-image: url(/img/background.png);
+    border-bottom: 0.1rem solid yellow;
+    align-items: center;
+    overflow: hidden;
+        
+    .header__promesa{
+        width: 40rem;
+        p{
+            color: white;
+            font-weight: 500;
+            span{
+                background-color: yellow;
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .header__timer{
+        font-weight: 500;
+        font-size: 1.5rem;
+        width: 15rem;
+        color: white;
+
+        
+    }
+}
+    

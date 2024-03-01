@@ -1,0 +1,102 @@
+.contenedor__footer{
+    @include conteiner-flex-row;
+    background-image: url(/img/background.png);
+    overflow: hidden;
+    border-top: 0.1rem solid yellow;
+    .footer__info{
+        flex: 1;
+        @include conteiner-flex-column;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        .footer__logo{
+            @include conteiner-flex-row;
+            width: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            img{
+                width: 5rem;
+                height: 5rem;
+            }
+            span{
+                font-size: 1.5rem;
+                font-weight: bold;
+                background-color: yellow;
+            }
+        }
+        
+        p{
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            font-weight: 500
+        }
+    }
+    .footer__redes{
+        @include conteiner-flex-row;
+        flex: 2;
+        align-items: center;
+        .redes__lista{
+            @include conteiner-flex-row;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            .lista__item{
+                list-style: none;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem 1rem;
+                i{
+                    align-items: center;
+                    justify-content: center;
+                    color: black;
+                    background-color: yellow;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 0.5rem;
+                    font-size: 2rem;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                i:hover{
+                    transition: 0.5s ease-in;
+                    font-size: 2.2rem;
+                    box-shadow: 0 0 5px yellow,
+                    0 0 25px yellow, 
+                    0 0 50px yellow, 
+                    0 0 100px yellow;
+                    
+                }
+            }
+        }
+
+    }
+    .footer__newsletter{
+        @include conteiner-flex-column;
+        flex: 1;
+        align-items: center;
+        text-align: center;
+        span{
+            color: white;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .newsletter{
+            button{
+                font-size: 1.1rem;
+                font-weight: bold;
+                background-color: yellow;
+                border-radius: 0.5rem;
+                padding: 0.2rem 0.2rem;
+                color: black;
+                cursor: pointer;
+                text-align: center;
+                text-transform: uppercase;
+                border: none;
+            }
+        }
+    }
+}
