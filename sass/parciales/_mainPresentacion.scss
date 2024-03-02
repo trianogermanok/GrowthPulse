@@ -1,7 +1,7 @@
 .main__presentacion{
     @include conteiner-flex-column;
     width: 70rem;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     align-items: center;
     text-align: center;
@@ -11,8 +11,9 @@
         font-size: 2rem;
         font-weight: bold;
         span{
-        font-weight: lighter;
+            font-weight: lighter;
         }
+        padding: 2rem;
     }
     p{
         font-weight: bold;
@@ -24,11 +25,28 @@
             font-weight: bold;
         }
     }
-    .vsl{
-        video{
-            width: 50rem;
-            height: 25rem;
+    .redes{
+        @include conteiner-flex-row;
+        width: 30em;
+        height: auto;
+        padding-top: 2rem;
+        .redes__item{
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
     }
+    .vsl{
+        padding: 5rem;
+        iframe {
+            box-shadow: 0 0 70px 25px $color-elementos;
+        }
+    }
+
     
 }

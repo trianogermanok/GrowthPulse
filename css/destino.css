@@ -22,6 +22,8 @@
   align-items: center;
   overflow: hidden; }
   .contenedor__header .header__promesa {
+    padding: 0.5em;
+    flex: 2;
     width: 40rem; }
     .contenedor__header .header__promesa p {
       color: white;
@@ -30,11 +32,53 @@
         background-color: yellow;
         color: black;
         font-weight: bold; }
+  .contenedor__header .hedaer__btnCTA {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start; }
+    .contenedor__header .hedaer__btnCTA .btnCTA {
+      font-size: 1.2em;
+      font-weight: 500;
+      color: black;
+      background-color: yellow;
+      border-radius: 0.2em;
+      border: none;
+      padding: 0.2em;
+      cursor: pointer;
+      transition: transform 0.3s ease-in; }
+      .contenedor__header .hedaer__btnCTA .btnCTA span {
+        text-transform: uppercase;
+        font-weight: bold; }
+    .contenedor__header .hedaer__btnCTA .btnCTA:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 5px yellow, 0 0 20px yellow,  0 0 40px yellow,  0 0 20px yellow; }
   .contenedor__header .header__timer {
-    font-weight: 500;
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    justify-content: flex-start;
+    font-weight: 300;
     width: 15rem;
-    color: white; }
+    color: white;
+    flex: 2;
+    font-size: 2em; }
+  .contenedor__header #temporizador {
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start; }
+    .contenedor__header #temporizador .borde {
+      border: 2px solid white;
+      border-radius: 0.5rem;
+      margin: 0rem 1rem;
+      width: 5rem;
+      height: 5rem; }
+      .contenedor__header #temporizador .borde .valor {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
 
 .contenedor__main {
   display: flex;
@@ -51,7 +95,7 @@
   width: 100%;
   justify-content: space-around;
   width: 70rem;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -59,7 +103,8 @@
   .main__presentacion .logo {
     color: white;
     font-size: 2rem;
-    font-weight: bold; }
+    font-weight: bold;
+    padding: 2rem; }
     .main__presentacion .logo span {
       font-weight: lighter; }
   .main__presentacion p {
@@ -70,9 +115,26 @@
     .main__presentacion p span {
       color: yellow;
       font-weight: bold; }
-  .main__presentacion .vsl video {
-    width: 50rem;
-    height: 25rem; }
+  .main__presentacion .redes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    width: 30em;
+    height: auto;
+    padding-top: 2rem; }
+    .main__presentacion .redes .redes__item {
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem; }
+      .main__presentacion .redes .redes__item img {
+        width: 100%;
+        height: auto; }
+  .main__presentacion .vsl {
+    padding: 5rem; }
+    .main__presentacion .vsl iframe {
+      box-shadow: 0 0 70px 25px #204473; }
 
 .main__socialProof {
   display: flex;
@@ -132,20 +194,20 @@
         text-transform: uppercase;
         text-align: center; }
       .main__socialProof .socialProof__cards .card button {
-        font-size: 1.2rem;
+        font-size: 1.2em;
         font-weight: bold;
         background-color: yellow;
-        border-radius: 0.5rem;
-        padding: 0.5rem 0.5rem;
+        border-radius: 0.5em;
+        padding: 0.5em 0.5em;
         color: black;
         cursor: pointer;
         text-align: center;
         text-transform: uppercase;
-        border: none; }
+        border: none;
+        transition: transform 0.3s ease-in; }
       .main__socialProof .socialProof__cards .card .btn:hover {
-        transition: 0.5s ease-in;
-        font-size: 1.5rem;
-        box-shadow: 0 0 5px yellow, 0 0 25px yellow,  0 0 50px yellow,  0 0 100px yellow; }
+        transform: scale(1.1);
+        box-shadow: 0 0 5px yellow, 0 0 20px yellow,  0 0 40px yellow,  0 0 20px yellow; }
 
 .main__calendario {
   display: flex;
@@ -198,37 +260,17 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    flex: 2;
-    align-items: center; }
-    .contenedor__footer .footer__redes .redes__lista {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      justify-content: space-around;
+    width: 30em;
+    height: auto;
+    padding: 2rem; }
+    .contenedor__footer .footer__redes .lista__item {
       justify-content: center;
-      width: 100%;
-      align-items: center; }
-      .contenedor__footer .footer__redes .redes__lista .lista__item {
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 1rem; }
-        .contenedor__footer .footer__redes .redes__lista .lista__item i {
-          align-items: center;
-          justify-content: center;
-          color: black;
-          background-color: yellow;
-          width: 2rem;
-          height: 2rem;
-          border-radius: 0.5rem;
-          font-size: 2rem;
-          text-align: center;
-          cursor: pointer; }
-        .contenedor__footer .footer__redes .redes__lista .lista__item i:hover {
-          transition: 0.5s ease-in;
-          font-size: 2.2rem;
-          box-shadow: 0 0 5px yellow, 0 0 25px yellow,  0 0 50px yellow,  0 0 100px yellow; }
+      align-items: center;
+      width: 4rem;
+      height: 4rem; }
+      .contenedor__footer .footer__redes .lista__item img {
+        width: 100%;
+        height: auto; }
   .contenedor__footer .footer__newsletter {
     display: flex;
     flex-direction: column;

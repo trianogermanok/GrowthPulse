@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Strategic PULSE</title>
+    <title>Growth PULSE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -18,8 +18,9 @@
     <div class="contenedor">
 
         <header class="contenedor__header">
-            <div class="header__timer" id="temporizador">
-                <span>dias</span>
+            <div class="header__timer" id="temporizador"></div>
+            <div class="hedaer__btnCTA">
+                <a href="#calendly"><button class="btnCTA">Agendar <span>llamada</span></button></a>
             </div>
             <div class="header__promesa">
                 <p><span>Oportunidad Única</span> | Durante todo este mes vamos a estar dando asesorías gratuitas para conocer tu negocio a fondo y ver la mejor manera de escalar. <span>(Las asesorías se duplicarán cuando el contador llegue a cero).</span></p>
@@ -29,11 +30,20 @@
         <main class="contenedor__main">
             <div class="main__presentacion">
                 <h1 class="logo">Growth <span>Pulse</span></h1>
-                <p>En <span>90 días</span> le damos un giro de 360° a tu negocio, <span>estudiando tu nicho y tu oferta</span>, ajustaremos las metricas y definiremos la estrategia para <span>escalar tu negocio</span> a <span>$10.000 usd de facturación mensual</span></p>.
+                <p>En <span>90 días</span> le damos un giro de 360° a tu negocio, <span>estudiando tu nicho y tu oferta</span>, ajustaremos las metricas y definiremos la estrategia para <span>escalar tu negocio</span> a <span>$10.000 usd de facturación mensual</span></p>
+                <div class="redes">
+                    <div class="redes__item">
+                        <a href="#"><img src="./img/linkedin.png" alt="logo_linkedin"></a>
+                    </div>
+                    <div class="redes__item">
+                        <a href="#"><img src="./img/instagram.png" alt="logo_instagram"></a>
+                    </div>
+                    <div class="redes__item">
+                        <a href="#"><img src="./img/youtube.png" alt="logo_youtube"></a>
+                    </div>
+                </div>
                 <div class="vsl">
-                    <video width="50rem" height="25rem" controls>
-                        <source src="./video/vsl.mp4" type="video/mp4">
-                    </video>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PdI98sfh8e8" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -60,14 +70,14 @@
                     </div>
                 </div>
             </div>
-            <div class="main__calendario">
+            <div id="calendly" class="main__calendario">
                 <!-- Principio del widget integrado de Calendly -->
                 <div class="calendly-inline-widget" data-url="https://calendly.com/fnledesma1/comienza-hoy?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                 <!-- Final del widget integrado de Calendly -->
             </div>
         </main>
-
+        
         <footer class="contenedor__footer">
             <div class="footer__info">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit, amet consectetur adipisicing elit.</p>
@@ -77,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="footer__redes">
+            <!-- <div class="footer__redes">
                 <ul class="redes__lista">
                     <li class="lista__item"><i class="fa-brands icono fa-linkedin"></i><a class="item__link" href="#"></a></li>
                     <li class="lista__item"><i class="fa-brands icono fa-youtube"></i><a class="item__link" href="#"></a></li>
@@ -86,13 +96,34 @@
                     <li class="lista__item"><i class="fa-brands icono fa-whatsapp"></i><a class="item__link" href="#"></a></li>
                     <li class="lista__item"><i class="fa-solid icono fa-envelope"></i><a class="item__link" href="#"></a></li>
                 </ul>
+            </div> -->
+
+            <div class="footer__redes">
+                <div class="lista__item">
+                    <a href="#"><img src="./img/linkedin.png" alt="logo_"></a>
+                </div>
+                <div class="lista__item">
+                    <a href="#"><img src="./img/linkedin.png" alt="logo_"></a>
+                </div>
+                <div class="lista__item">
+                    <a href="#"><img src="./img/linkedin.png" alt="logo_"></a>
+                </div>
+                <div class="lista__item">
+                    <a href="#"><img src="./img/linkedin.png" alt="logo_"></a>
+                </div>
+                <div class="lista__item">
+                    <a href="#"><img src="./img/linkedin.png" alt="logo_"></a>
+                </div>
+                <div class="lista__item">
+                    <a href="#"><img src="./img/linkedin.png" alt="logo_"></a>
+                </div>
             </div>
 
             <div class="footer__newsletter">
                 <span>Suscribite al Newsletter para estar informado sobre novedades, promociones y noticas.</span>
                 <div class="newsletter">
                     <input type="email">
-                    <button class="btn">Suscribite</button>
+                    <button class="btn2">Suscribite</button>
                 </div>
             </div>
         </footer>

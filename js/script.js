@@ -42,7 +42,16 @@ function mostrarTemporizador(tiempoRestante) {
     var minutos = Math.floor((tiempoRestante % (60 * 60)) / 60);
     var segundos = tiempoRestante % 60;
 
-    document.getElementById('temporizador').innerText = dias + "d " + horas + "h " + minutos + "m " + segundos + "s";
+    // document.getElementById('temporizador').innerText = dias + "d " + horas + "h " + minutos + "m " + segundos + "s";
+
+    /*Aqui COMIENZA el cambio de codigo*/
+    document.getElementById('temporizador').innerHTML = `
+        <div class="borde"><span class="valor">${dias}</span></div>:
+        <div class="borde"><span class="valor">${horas}</span></div>:
+        <div class="borde"><span class="valor">${minutos}</span></div>:
+        <div class="borde"><span class="valor">${segundos}</span></div>
+    `;
+    /*Aqui TERMINA el cambio de codigo*/
 }
 
 // Llamar a la función para iniciar el temporizador con la fecha objetivo especificada
