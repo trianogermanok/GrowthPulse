@@ -42,8 +42,6 @@ function mostrarTemporizador(tiempoRestante) {
     var minutos = Math.floor((tiempoRestante % (60 * 60)) / 60);
     var segundos = tiempoRestante % 60;
 
-    // document.getElementById('temporizador').innerText = dias + "d " + horas + "h " + minutos + "m " + segundos + "s";
-
     /*Aqui COMIENZA el cambio de codigo*/
     document.getElementById('temporizador').innerHTML = `
         <div class="borde"><span class="valor">${dias}</span></div>:
@@ -60,4 +58,24 @@ document.addEventListener('DOMContentLoaded', function() {
     var fechaObjetivo = "2024-03-05T00:00:00"; // Formato: Año-Mes-DíaT00:00:00
 
     iniciarTemporizadorParaFecha(fechaObjetivo);
+});
+
+// Cards Dinamicas
+
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".more");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+            const card = this.closest(".card");
+            const paragraph = card.querySelector(".parrafo");
+            if (paragraph.style.height === "100px") {
+                paragraph.style.height = "auto";
+                this.innerText = "Leer menos";
+            } else {
+                paragraph.style.height = "100px";
+                this.innerText = "Leer más";
+            }
+        });
+    });
 });

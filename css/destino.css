@@ -209,7 +209,8 @@
 
 @media (max-width: 425px) {
   .main__presentacion {
-    max-width: 100vw; }
+    max-width: 100vw;
+    padding: 0.3rem; }
     .main__presentacion p {
       font-size: 1rem; }
     .main__presentacion .redes {
@@ -228,7 +229,7 @@
   flex-direction: column;
   width: 100%;
   justify-content: space-around;
-  height: 100vh;
+  height: auto;
   align-items: center;
   justify-content: space-around;
   overflow: hidden; }
@@ -236,7 +237,8 @@
     font-size: 2rem;
     color: white;
     text-align: center;
-    font-weight: 500; }
+    font-weight: 500;
+    padding: 2rem; }
     .main__socialProof h3 span {
       background-color: yellow;
       font-weight: bold;
@@ -254,16 +256,18 @@
       flex-direction: column;
       width: 100%;
       justify-content: space-around;
-      height: 30rem;
+      height: auto;
       width: 20rem;
       align-items: center;
       text-align: center;
       padding: 0.5rem;
+      margin: 0;
       border: 0.2rem solid #204473;
       border-radius: 1rem;
       background-color: #0B1926; }
       .main__socialProof .socialProof__cards .card .conteiner__img {
         border-radius: 0.5rem;
+        padding-bottom: 1rem;
         width: 17rem;
         height: 10rem;
         background-size: cover;
@@ -273,7 +277,8 @@
       .main__socialProof .socialProof__cards .card h2 {
         color: white;
         font-size: 1.5rem;
-        font-weight: 500; }
+        font-weight: 500;
+        padding: 2rem; }
         .main__socialProof .socialProof__cards .card h2 span {
           text-transform: uppercase;
           background-color: #e3eeff;
@@ -281,11 +286,25 @@
           color: black;
           border-radius: 0.5rem;
           padding: 0.2rem 0.2rem; }
-      .main__socialProof .socialProof__cards .card p {
+      .main__socialProof .socialProof__cards .card .parrafo {
         color: white;
         text-transform: uppercase;
-        text-align: center; }
-      .main__socialProof .socialProof__cards .card button {
+        overflow: hidden;
+        transition: height 0.3s ease;
+        height: 100px;
+        /* Altura inicial del párrafo */ }
+      .main__socialProof .socialProof__cards .card .more {
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-weight: 500;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.2rem 0.2rem;
+        background-color: #204473;
+        color: white;
+        font-size: 1.2rem; }
+      .main__socialProof .socialProof__cards .card .btn {
         font-size: 1.2em;
         font-weight: bold;
         background-color: yellow;
@@ -311,19 +330,26 @@
     .main__socialProof .socialProof__cards {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      height: auto; }
       .main__socialProof .socialProof__cards .card {
         margin: 1rem;
-        height: 35rem;
+        height: auto;
         width: 25rem; } }
 
 @media (max-width: 425px) {
-  .main__socialProof h3 {
-    font-size: 1.5rem; }
-  .main__socialProof .socialProof__cards .card {
-    margin: 1rem;
-    height: 30rem;
-    width: 20rem; } }
+  .main__socialProof {
+    height: auto; }
+    .main__socialProof h3 {
+      font-size: 1.5rem; }
+    .main__socialProof .socialProof__cards {
+      height: auto; }
+      .main__socialProof .socialProof__cards .card {
+        margin: 1rem;
+        height: auto;
+        width: 20rem; }
+        .main__socialProof .socialProof__cards .card .parrafo {
+          height: 100px; } }
 
 .main__calendario {
   display: flex;
