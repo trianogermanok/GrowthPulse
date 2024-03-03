@@ -263,12 +263,12 @@
       border-radius: 1rem;
       background-color: #0B1926; }
       .main__socialProof .socialProof__cards .card .conteiner__img {
-        border-radius: 50%;
-        width: 10rem;
+        border-radius: 0.5rem;
+        width: 17rem;
         height: 10rem;
         background-size: cover;
         background-position: center;
-        background-image: url(../img/cliente1.jpg);
+        background-image: url(../img/portadaFDM.jpeg);
         box-shadow: 0 0 15px 5px blue; }
       .main__socialProof .socialProof__cards .card h2 {
         color: white;
@@ -444,7 +444,8 @@
   .contenedor__footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    height: auto; }
     .contenedor__footer .footer__info {
       order: 3;
       display: flex;
@@ -461,16 +462,20 @@
           font-size: 1.2rem; }
     .contenedor__footer .footer__redes {
       order: 2;
-      width: 25em; }
+      width: 100vw;
+      justify-content: space-around; }
       .contenedor__footer .footer__redes .lista__item {
-        width: 2.5rem;
-        height: 2.5rem; }
+        width: 2rem;
+        height: 2rem; }
     .contenedor__footer .footer__newsletter {
       order: 1;
+      height: 15rem;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around; }
       .contenedor__footer .footer__newsletter .displaySmall {
         display: none; }
       .contenedor__footer .footer__newsletter .displayXSmall {
-        display: block; } }
+        display: block; }
+      .contenedor__footer .footer__newsletter .btn2 {
+        margin-top: 0.5rem; } }
