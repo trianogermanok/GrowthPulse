@@ -4,6 +4,7 @@
     overflow: hidden;
     border-top: 0.1rem solid yellow;
     .footer__info{
+        padding: 0.1rem 0.1rem;
         flex: 1;
         @include conteiner-flex-column;
         width: auto;
@@ -76,17 +77,26 @@
 
     .footer__redes{
         @include conteiner-flex-row;
+        align-items: center;
         width: 30em;
         height: auto;
         padding: 2rem;
         .lista__item{
             justify-content: center;
             align-items: center;
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
             img{
                 width: 100%;
                 height: auto;
+                border-radius: 50%;
+                transition: 0.2s ease-in;
+            }
+            img:hover{
+                box-shadow: 0 0 5px yellow,
+                0 0 20px yellow, 
+                0 0 40px yellow, 
+                0 0 20px yellow;
             }
         }
     }
