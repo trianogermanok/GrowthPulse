@@ -167,14 +167,15 @@
     padding: 2rem; }
     .main__presentacion .logo span {
       font-weight: lighter; }
-  .main__presentacion p {
+  .main__presentacion h2 {
     font-weight: bold;
     font-size: 1.5rem;
-    color: white;
-    text-transform: uppercase; }
-    .main__presentacion p span {
+    color: white; }
+    .main__presentacion h2 span {
       color: yellow;
       font-weight: bold; }
+  .main__presentacion h3 {
+    color: white; }
   .main__presentacion .redes {
     display: flex;
     flex-direction: row;
@@ -361,22 +362,24 @@
 
 .contenedor__footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   justify-content: space-around;
   background-image: url(../img/background.png);
   overflow: hidden;
-  border-top: 0.1rem solid yellow; }
+  border-top: 0.1rem solid yellow;
+  justify-content: center;
+  align-items: center; }
   .contenedor__footer .footer__info {
     padding: 0.1rem 0.1rem;
-    flex: 1;
+    order: 2;
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: space-around;
     width: auto;
     height: auto;
-    justify-content: center; }
+    justify-content: flex-end; }
     .contenedor__footer .footer__info .footer__logo {
       display: flex;
       flex-direction: row;
@@ -399,19 +402,21 @@
       color: white;
       font-weight: 500; }
   .contenedor__footer .footer__redes {
+    order: 1;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    width: 30em;
+    width: 70%;
     height: auto;
-    padding: 2rem; }
+    padding: 2rem;
+    justify-content: space-around; }
     .contenedor__footer .footer__redes .lista__item {
       justify-content: center;
       align-items: center;
-      width: 3rem;
-      height: 3rem; }
+      width: 4rem;
+      height: 4rem; }
       .contenedor__footer .footer__redes .lista__item img {
         width: 100%;
         height: auto;
@@ -419,32 +424,6 @@
         transition: 0.2s ease-in; }
       .contenedor__footer .footer__redes .lista__item img:hover {
         box-shadow: 0 0 5px yellow, 0 0 20px yellow,  0 0 40px yellow,  0 0 20px yellow; }
-  .contenedor__footer .footer__newsletter {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-around;
-    flex: 1;
-    align-items: center;
-    text-align: center; }
-    .contenedor__footer .footer__newsletter span {
-      color: white;
-      font-weight: 500;
-      text-align: center;
-      text-transform: uppercase; }
-    .contenedor__footer .footer__newsletter .displaySmall, .contenedor__footer .footer__newsletter .displayXSmall {
-      display: none; }
-    .contenedor__footer .footer__newsletter button {
-      font-size: 1.1rem;
-      font-weight: bold;
-      background-color: yellow;
-      border-radius: 0.5rem;
-      padding: 0.2rem 0.2rem;
-      color: black;
-      cursor: pointer;
-      text-align: center;
-      text-transform: uppercase;
-      border: none; }
 
 @media (max-width: 768px) {
   .contenedor__footer .footer__info .footer__logo img {
@@ -455,16 +434,8 @@
   .contenedor__footer .footer__redes {
     width: 20em; }
     .contenedor__footer .footer__redes .lista__item {
-      width: 2rem;
-      height: 2rem; }
-  .contenedor__footer .footer__newsletter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-    .contenedor__footer .footer__newsletter .displayBig, .contenedor__footer .footer__newsletter .displayXSmall {
-      display: none; }
-    .contenedor__footer .footer__newsletter .displaySmall {
-      display: block; } }
+      width: 3rem;
+      height: 3rem; } }
 
 @media (max-width: 425px) {
   .contenedor__footer {
@@ -488,20 +459,7 @@
           font-size: 1.2rem; }
     .contenedor__footer .footer__redes {
       order: 2;
-      width: 100vw;
       justify-content: space-around; }
       .contenedor__footer .footer__redes .lista__item {
-        width: 2rem;
-        height: 2rem; }
-    .contenedor__footer .footer__newsletter {
-      order: 1;
-      height: 15rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around; }
-      .contenedor__footer .footer__newsletter .displaySmall {
-        display: none; }
-      .contenedor__footer .footer__newsletter .displayXSmall {
-        display: block; }
-      .contenedor__footer .footer__newsletter .btn2 {
-        margin-top: 0.5rem; } }
+        width: 3rem;
+        height: 3rem; } }

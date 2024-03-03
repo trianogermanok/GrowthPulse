@@ -15,15 +15,17 @@
         }
         padding: 2rem;
     }
-    p{
+    h2{
         font-weight: bold;
         font-size: 1.5rem;
         color: white;
-        text-transform: uppercase;
         span{
             color: yellow;
             font-weight: bold;
         }
+    }
+    h3{
+        color: white;
     }
     .redes{
         @include conteiner-flex-row;

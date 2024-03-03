@@ -1,15 +1,17 @@
 .contenedor__footer{
-    @include conteiner-flex-row;
+    @include conteiner-flex-column;
     background-image: url(../img/background.png);
     overflow: hidden;
     border-top: 0.1rem solid yellow;
+    justify-content: center;
+    align-items: center;
     .footer__info{
         padding: 0.1rem 0.1rem;
-        flex: 1;
+        order: 2;
         @include conteiner-flex-column;
         width: auto;
         height: auto;
-        justify-content: center;
+        justify-content: flex-end;
         .footer__logo{
             @include conteiner-flex-row;
             width: auto;
@@ -36,16 +38,18 @@
     }
 
     .footer__redes{
+        order: 1;
         @include conteiner-flex-row;
         align-items: center;
-        width: 30em;
+        width: 70%;
         height: auto;
         padding: 2rem;
+        justify-content: space-around;
         .lista__item{
             justify-content: center;
             align-items: center;
-            width: 3rem;
-            height: 3rem;
+            width: 4rem;
+            height: 4rem;
             img{
                 width: 100%;
                 height: auto;
@@ -58,34 +62,6 @@
                 0 0 40px yellow, 
                 0 0 20px yellow;
             }
-        }
-    }
-
-    .footer__newsletter{
-        @include conteiner-flex-column;
-        flex: 1;
-        align-items: center;
-        text-align: center;
-        span{
-            color: white;
-            font-weight: 500;
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .displaySmall, .displayXSmall{
-            display:none;
-        }
-        button{
-            font-size: 1.1rem;
-            font-weight: bold;
-            background-color: yellow;
-            border-radius: 0.5rem;
-            padding: 0.2rem 0.2rem;
-            color: black;
-            cursor: pointer;
-            text-align: center;
-            text-transform: uppercase;
-            border: none;
         }
     }
 }
@@ -107,23 +83,11 @@
         .footer__redes{
             width: 20em;
             .lista__item{
-                width: 2rem;
-                height: 2rem;
+                width: 3rem;
+                height: 3rem;
             }
         }
-    
-        .footer__newsletter{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            .displayBig, .displayXSmall{
-                display:none;
-            }
-            .displaySmall{
-                display: block;
-            }
-            
-        }
+
     }
 }
 
@@ -154,30 +118,11 @@
     
         .footer__redes{
             order: 2;
-            width: 100vw;
             justify-content: space-around;
             .lista__item{
-                width: 2rem;
-                height: 2rem;
+                width: 3rem;
+                height: 3rem;
             }
-        }
-    
-        .footer__newsletter{
-            order: 1;
-            height: 15rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            .displaySmall{
-                display:none;
-            }
-            .displayXSmall{
-                display: block;
-            }
-            .btn2{
-                margin-top: 0.5rem;
-            }
-        
         }
     }
 }
