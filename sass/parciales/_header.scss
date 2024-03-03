@@ -35,10 +35,8 @@
             padding: 0.2em;
             cursor: pointer;
             transition: transform 0.3s ease-in;
-            span{
-                text-transform: uppercase;
-                font-weight: bold;
-            }
+            text-transform: uppercase;
+            font-weight: bold;
         }
         .btnCTA:hover{
             transform: scale(1.1);
@@ -78,6 +76,77 @@
                 justify-content: center;
                 align-items: center;
             }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .contenedor__header{
+        padding: 1rem;
+        justify-items: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-rows: auto auto; /* Dos filas, la primera se ajusta automáticamente y la segunda también */
+        grid-template-columns: 50% 50%; /* Una columna */
+        gap: 10px; /* Espacio entre los elementos */
+        .header__timer{
+            width: auto;
+            font-size: 1.5em;
+            grid-row: 2; /* Coloca el segundo elemento en la segunda fila */
+            grid-column: 1;
+            text-align: center;
+        }
+        #temporizador{
+            display: flex;
+            justify-content: flex-end;
+            .borde{
+                margin: 0rem 0.5rem;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+        .hedaer__btnCTA{
+            grid-row: 2; /* Coloca el tercer elemento en la segunda fila */
+            grid-column: 2;
+            display: flex;
+            justify-content: flex-start;
+            width: auto;
+            .btnCTA{
+            }   
+        }
+        .header__promesa{
+            grid-row: 1; 
+            grid-column: 1 / span 2;
+            width: 100%;
+            justify-content: center;
+            p{
+                justify-content: center;
+            }
+        }
+    }
+
+
+@media (max-width: 425px){
+    .contenedor__header{
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        justify-content: space-around;
+        .header__timer{
+            order: 2;
+        }
+        .hedaer__btnCTA{
+            order: 3;
+        }
+        .header__promesa{
+            width: 100vw;
+            height: auto;
+            order: 1;
+            text-align: center;
+            font-size: 1rem;
         }
     }
 }

@@ -31,9 +31,14 @@
             border: 0.2rem solid $color-elementos;
             border-radius: 1rem;
             background-color: $color-fondo;
-            img{
-                width: 90%;
+            .conteiner__img{
+                border-radius: 50%;
+                width: 10rem;
                 height: 10rem;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../img/cliente1.jpg);
+                box-shadow: 0 0 15px 5px blue;
             }
             h2{
                 color: white;
@@ -73,6 +78,40 @@
                 0 0 40px yellow, 
                 0 0 20px yellow;
                 
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .main__socialProof{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra horizontalmente */
+        .socialProof__cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card{
+                margin: 1rem;
+                height: 35rem;
+                width: 25rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .main__socialProof{
+        h3{
+            font-size: 1.5rem;
+        }
+        .socialProof__cards{
+            .card{
+                margin: 1rem;
+                height: 30rem;
+                width: 20rem;
             }
         }
     }
