@@ -272,7 +272,7 @@
       background-color: #0B1926; }
       .main__socialProof .socialProof__cards .card .conteiner__img1 {
         border-radius: 0.5rem;
-        margin: 1rem;
+        margin: 1.5rem;
         width: 12rem;
         height: 12rem;
         border-radius: 50%;
@@ -282,7 +282,7 @@
         background-image: url(../img/franco.jpeg); }
       .main__socialProof .socialProof__cards .card .conteiner__img2 {
         border-radius: 0.5rem;
-        margin: 1rem;
+        margin: 1.5rem;
         width: 12rem;
         height: 12rem;
         border-radius: 50%;
@@ -292,7 +292,7 @@
         background-image: url(../img/erik.jpeg); }
       .main__socialProof .socialProof__cards .card .conteiner__img3 {
         border-radius: 0.5rem;
-        margin: 1rem;
+        margin: 1.5rem;
         width: 12rem;
         height: 12rem;
         border-radius: 50%;
@@ -303,7 +303,8 @@
       .main__socialProof .socialProof__cards .card h2 {
         color: white;
         font-size: 1.5rem;
-        font-weight: 500; }
+        font-weight: 500;
+        margin-top: 1.5rem; }
         .main__socialProof .socialProof__cards .card h2 span {
           text-transform: uppercase;
           background-color: #e3eeff;
