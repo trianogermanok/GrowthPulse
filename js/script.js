@@ -69,13 +69,15 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             const card = this.closest(".card");
             const paragraph = card.querySelector(".parrafo");
-            if (paragraph.style.height === "100px") {
-                paragraph.style.height = "auto";
+            paragraph.classList.toggle("expandido"); // Alternar la clase expandido
+            if (paragraph.classList.contains("expandido")) {
                 this.innerText = "Leer menos";
             } else {
-                paragraph.style.height = "100px";
                 this.innerText = "Leer más";
             }
         });
     });
 });
+
+
+

@@ -231,9 +231,7 @@
   width: 100%;
   justify-content: space-around;
   height: auto;
-  align-items: center;
-  justify-content: space-around;
-  overflow: hidden; }
+  align-items: center; }
   .main__socialProof h3 {
     font-size: 2rem;
     color: white;
@@ -246,40 +244,66 @@
       color: black; }
   .main__socialProof .socialProof__cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: space-around;
     width: 80%;
     height: auto;
-    justify-content: space-around; }
+    justify-content: center;
+    align-items: center; }
     .main__socialProof .socialProof__cards .card {
       display: flex;
       flex-direction: column;
       width: 100%;
       justify-content: space-around;
+      width: 35rem;
+      /* Ancho fijo */
       height: auto;
-      width: 20rem;
+      transition: height 0.3s ease;
+      /* Transición suave de altura */
+      overflow: hidden;
+      /* Oculta el contenido que exceda el tamaño de la tarjeta */
       align-items: center;
       text-align: center;
       padding: 0.5rem;
-      margin: 0;
+      margin: 2rem;
       border: 0.2rem solid #204473;
       border-radius: 1rem;
       background-color: #0B1926; }
-      .main__socialProof .socialProof__cards .card .conteiner__img {
+      .main__socialProof .socialProof__cards .card .conteiner__img1 {
         border-radius: 0.5rem;
-        padding-bottom: 1rem;
-        width: 17rem;
-        height: 10rem;
+        margin: 1rem;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
         background-size: cover;
         background-position: center;
-        background-image: url(../img/portadaFDM.jpeg);
-        box-shadow: 0 0 15px 5px blue; }
+        box-shadow: 0 0 15px 5px blue;
+        background-image: url(../img/franco.jpeg); }
+      .main__socialProof .socialProof__cards .card .conteiner__img2 {
+        border-radius: 0.5rem;
+        margin: 1rem;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 15px 5px blue;
+        background-image: url(../img/erik.jpeg); }
+      .main__socialProof .socialProof__cards .card .conteiner__img3 {
+        border-radius: 0.5rem;
+        margin: 1rem;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 15px 5px blue;
+        background-image: url(../img/german.jpg); }
       .main__socialProof .socialProof__cards .card h2 {
         color: white;
         font-size: 1.5rem;
-        font-weight: 500;
-        padding: 2rem; }
+        font-weight: 500; }
         .main__socialProof .socialProof__cards .card h2 span {
           text-transform: uppercase;
           background-color: #e3eeff;
@@ -288,14 +312,12 @@
           border-radius: 0.5rem;
           padding: 0.2rem 0.2rem; }
       .main__socialProof .socialProof__cards .card .parrafo {
+        height: auto;
+        margin: 2rem;
         color: white;
-        text-transform: uppercase;
-        overflow: hidden;
-        transition: height 0.3s ease;
-        height: 100px;
-        /* Altura inicial del párrafo */ }
+        font-style: oblique; }
       .main__socialProof .socialProof__cards .card .more {
-        display: block;
+        display: none;
         margin-bottom: 10px;
         cursor: pointer;
         font-weight: 500;
@@ -336,7 +358,9 @@
       .main__socialProof .socialProof__cards .card {
         margin: 1rem;
         height: auto;
-        width: 25rem; } }
+        width: 25rem; }
+        .main__socialProof .socialProof__cards .card .more {
+          display: none; } }
 
 @media (max-width: 425px) {
   .main__socialProof {
@@ -349,8 +373,14 @@
         margin: 1rem;
         height: auto;
         width: 20rem; }
+        .main__socialProof .socialProof__cards .card .more {
+          display: block; }
         .main__socialProof .socialProof__cards .card .parrafo {
-          height: 100px; } }
+          height: 100px;
+          overflow: hidden;
+          transition: height 0.3s ease; }
+        .main__socialProof .socialProof__cards .card .parrafo.expandido {
+          height: auto; } }
 
 .main__calendario {
   display: flex;

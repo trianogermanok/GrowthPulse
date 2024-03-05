@@ -2,9 +2,6 @@
     @include conteiner-flex-column;
     height: auto;
     align-items: center;
-    justify-content: space-around;
-    overflow: hidden;
-    
     h3{
         font-size: 2rem;
         color: white;
@@ -18,36 +15,38 @@
         }
     }
     .socialProof__cards{
-        @include conteiner-flex-row;
+        @include conteiner-flex-column;
         width: 80%;
         height: auto;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         .card{
             @include conteiner-flex-column;
-            height: auto;
-            width: 20rem;
+            @include estilos-logicos-card;
             align-items: center;
             text-align: center;
             padding: 0.5rem;
-            margin: 0;
+            margin: 2rem;
             border: 0.2rem solid $color-elementos;
             border-radius: 1rem;
             background-color: $color-fondo;
-            .conteiner__img{
-                border-radius: 0.5rem;
-                padding-bottom: 1rem;
-                width: 17rem;
-                height: 10rem;
-                background-size: cover;
-                background-position: center;
-                background-image: url(../img/portadaFDM.jpeg);
-                box-shadow: 0 0 15px 5px blue;
+            .conteiner__img1{
+                @include conteiner-img-card;
+                background-image: url(../img/franco.jpeg);
             }
+            .conteiner__img2{
+                @include conteiner-img-card;
+                background-image: url(../img/erik.jpeg);
+            }
+            .conteiner__img3{
+                @include conteiner-img-card;
+                background-image: url(../img/german.jpg);
+            }
+
             h2{
                 color: white;
                 font-size: 1.5rem;
                 font-weight: 500;
-                padding: 2rem;
                 span{
                     text-transform: uppercase;
                     background-color: $color-fuente1;
@@ -58,14 +57,13 @@
                 }
             }
             .parrafo{
+                height: auto;
+                margin: 2rem;
                 color: white;
-                text-transform: uppercase;
-                overflow: hidden;
-                transition: height 0.3s ease;
-                height: 100px; /* Altura inicial del párrafo */
-                }
+                font-style: oblique;
+            }
             .more {
-                display: block;
+                display: none;
                 margin-bottom: 10px;
                 cursor: pointer;
                 font-weight: 500;
@@ -116,6 +114,9 @@
                 margin: 1rem;
                 height: auto;
                 width: 25rem;
+                .more{
+                    display: none;
+                }
             }
         }
     }
@@ -130,11 +131,19 @@
         .socialProof__cards{
             height: auto;
             .card{
+                .more{
+                    display: block;
+                }
                 margin: 1rem;
                 height: auto;
                 width: 20rem;
                 .parrafo{
                     height: 100px;
+                    overflow: hidden;
+                    transition: height 0.3s ease;
+                }
+                .parrafo.expandido {
+                    height: auto;
                 }
             }
         }

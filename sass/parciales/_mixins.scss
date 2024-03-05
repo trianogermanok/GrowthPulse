@@ -11,3 +11,21 @@
     width: 100%;
     justify-content: space-around;
 }
+
+@mixin conteiner-img-card{
+    border-radius: 0.5rem;
+    margin: 1rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 15px 5px blue;
+}
+
+@mixin estilos-logicos-card{
+    width: 35rem; /* Ancho fijo */
+    height: auto;
+    transition: height 0.3s ease; /* Transición suave de altura */
+    overflow: hidden; /* Oculta el contenido que exceda el tamaño de la tarjeta */
+}
