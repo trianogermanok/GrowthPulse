@@ -73,6 +73,31 @@
     }
 }
 
+@media (max-width: 430px){
+    .main__presentacion{
+        max-width: 100vw;
+        padding: 0.3rem;
+        p{
+            font-size: 1rem;
+        }
+        .redes{
+            width: 15em;
+            .redes__item{
+                justify-content: center;
+                align-items: center;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        .vsl{
+            iframe{
+                width: 340px;
+                height: 190px;
+            }
+        }
+    }
+}
+
 @media (max-width: 425px){
     .main__presentacion{
         max-width: 100vw;

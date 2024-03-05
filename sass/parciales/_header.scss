@@ -128,12 +128,11 @@
         }
     }
 
-
-@media (max-width: 425px){
+@media (max-width: 430px){
     .contenedor__header{
         display: flex;
         flex-direction: column;
-        height: 20rem;
+        height: auto;
         justify-content: space-around;
         .header__timer{
             order: 2;
@@ -149,5 +148,9 @@
             font-size: 1rem;
         }
     }
+}
+
+@media (max-width: 425px){
+    
 }
     
