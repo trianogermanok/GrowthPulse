@@ -55,7 +55,7 @@ function mostrarTemporizador(tiempoRestante) {
 // Llamar a la función para iniciar el temporizador con la fecha objetivo especificada
 document.addEventListener('DOMContentLoaded', function() {
     // Fecha objetivo (5 de marzo de 2024)
-    var fechaObjetivo = "2024-03-05T00:00:00"; // Formato: Año-Mes-DíaT00:00:00
+    var fechaObjetivo = "2024-04-06T00:00:00"; // Formato: Año-Mes-DíaT00:00:00
 
     iniciarTemporizadorParaFecha(fechaObjetivo);
 });
