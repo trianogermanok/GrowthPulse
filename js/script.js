@@ -30,7 +30,7 @@ function iniciarTemporizadorParaFecha(fechaObjetivo) {
         // Detener el temporizador cuando el tiempo llegue a cero
         if (tiempoRestante <= 0) {
             clearInterval(temporizadorInterval);
-            alert("¡Tiempo agotado!");
+            //alert("¡Tiempo agotado!");
         }
     }, 1000);
 }
