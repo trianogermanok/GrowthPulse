@@ -5,6 +5,7 @@
     border-bottom: 0.1rem solid yellow;
     align-items: center;
     overflow: hidden;
+    display: none;
         
     .header__promesa{
         padding: 0.5em;
@@ -87,7 +88,7 @@
         align-items: center;
         width: 100vw;
         height: auto;
-        display: grid;
+        display: none;
         grid-template-rows: auto auto; /* Dos filas, la primera se ajusta automáticamente y la segunda también */
         grid-template-columns: 50% 50%; /* Una columna */
         gap: 10px; /* Espacio entre los elementos */
@@ -130,7 +131,7 @@
 
 @media (max-width: 430px){
     .contenedor__header{
-        display: flex;
+        display: none;
         flex-direction: column;
         height: auto;
         justify-content: space-around;
@@ -151,6 +152,8 @@
 }
 
 @media (max-width: 425px){
-    
+    .contenedor__header{
+        display: none;
+    }
 }
     
