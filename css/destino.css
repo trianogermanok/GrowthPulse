@@ -245,7 +245,7 @@
   .main__presentacion .main__presentacion {
     max-width: 100vw;
   }
-  .main__presentacion .main__presentacion .vsl iframe {
+  .main__presentacion .main__presentacion .vsl .video {
     width: 700px;
     height: 395px;
   }
@@ -267,7 +267,7 @@
     width: 3rem;
     height: 3rem;
   }
-  .main__presentacion .main__presentacion .vsl iframe {
+  .main__presentacion .main__presentacion .vsl .video {
     width: 340px;
     height: 190px;
   }
@@ -289,7 +289,7 @@
     width: 3rem;
     height: 3rem;
   }
-  .main__presentacion .main__presentacion .vsl iframe {
+  .main__presentacion .main__presentacion .vsl .video {
     width: 354px;
     height: 200px;
   }
