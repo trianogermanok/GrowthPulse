@@ -50,34 +50,4 @@ function mostrarTemporizador(tiempoRestante) {
         <div class="borde"><span class="valor">${segundos}</span></div>
     `;
     /*Aqui TERMINA el cambio de codigo*/
-}
-
-// Llamar a la función para iniciar el temporizador con la fecha objetivo especificada
-document.addEventListener('DOMContentLoaded', function() {
-    // Fecha objetivo (5 de marzo de 2024)
-    var fechaObjetivo = "2024-04-06T00:00:00"; // Formato: Año-Mes-DíaT00:00:00
-
-    iniciarTemporizadorParaFecha(fechaObjetivo);
-});
-
-// Cards Dinamicas
-
-document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".more");
-
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            const card = this.closest(".card");
-            const paragraph = card.querySelector(".parrafo");
-            paragraph.classList.toggle("expandido"); // Alternar la clase expandido
-            if (paragraph.classList.contains("expandido")) {
-                this.innerText = "Leer menos";
-            } else {
-                this.innerText = "Leer más";
-            }
-        });
-    });
-});
-
-
-
+    }

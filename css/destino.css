@@ -207,6 +207,8 @@
 }
 .main__presentacion h3 {
   color: white;
+  font-weight: normal;
+  margin-top: 0, 5rem;
 }
 .main__presentacion .redes {
   display: flex;
@@ -235,63 +237,64 @@
 .main__presentacion .vsl {
   padding: 5rem;
 }
-.main__presentacion .vsl iframe {
+.main__presentacion .vsl .video {
   box-shadow: 0 0 65px 10px blue;
+  height: auto;
 }
-
 @media (max-width: 768px) {
-  .main__presentacion {
+  .main__presentacion .main__presentacion {
     max-width: 100vw;
   }
-  .main__presentacion .vsl iframe {
+  .main__presentacion .main__presentacion .vsl iframe {
     width: 700px;
     height: 395px;
   }
 }
 @media (max-width: 430px) {
-  .main__presentacion {
+  .main__presentacion .main__presentacion {
     max-width: 100vw;
     padding: 0.3rem;
   }
-  .main__presentacion p {
+  .main__presentacion .main__presentacion p {
     font-size: 1rem;
   }
-  .main__presentacion .redes {
+  .main__presentacion .main__presentacion .redes {
     width: 15em;
   }
-  .main__presentacion .redes .redes__item {
+  .main__presentacion .main__presentacion .redes .redes__item {
     justify-content: center;
     align-items: center;
     width: 3rem;
     height: 3rem;
   }
-  .main__presentacion .vsl iframe {
+  .main__presentacion .main__presentacion .vsl iframe {
     width: 340px;
     height: 190px;
   }
 }
 @media (max-width: 425px) {
-  .main__presentacion {
+  .main__presentacion .main__presentacion {
     max-width: 100vw;
     padding: 0.3rem;
   }
-  .main__presentacion p {
+  .main__presentacion .main__presentacion p {
     font-size: 1rem;
   }
-  .main__presentacion .redes {
+  .main__presentacion .main__presentacion .redes {
     width: 15em;
   }
-  .main__presentacion .redes .redes__item {
+  .main__presentacion .main__presentacion .redes .redes__item {
     justify-content: center;
     align-items: center;
     width: 3rem;
     height: 3rem;
   }
-  .main__presentacion .vsl iframe {
+  .main__presentacion .main__presentacion .vsl iframe {
     width: 354px;
     height: 200px;
   }
 }
+
 .main__socialProof {
   display: flex;
   flex-direction: column;

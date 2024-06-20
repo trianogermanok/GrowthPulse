@@ -26,6 +26,8 @@
     }
     h3{
         color: white;
+        font-weight:normal;
+        margin-top: 0,5rem;
     }
     .redes{
         @include conteiner-flex-row;
@@ -51,15 +53,14 @@
             }
         }
     }
+
     .vsl{
         padding: 5rem;
-        iframe {
+        .video {
             box-shadow: 0 0 65px 10px blue;
+            height: auto;
         }
     }
-
-    
-}
 
 @media (max-width: 768px){
     .main__presentacion{
@@ -121,4 +122,5 @@
             }
         }
     }
+}
 }
