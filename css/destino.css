@@ -12,6 +12,7 @@
   width: 100%;
   justify-content: space-around;
   overflow: hidden;
+  width: 100vw;
 }
 
 .contenedor__header {
@@ -180,7 +181,7 @@
   flex-direction: column;
   width: 100%;
   justify-content: space-around;
-  width: 70rem;
+  width: 100vw;
   height: auto;
   overflow: hidden;
   align-items: center;
@@ -235,19 +236,19 @@
   box-shadow: 0 0 5px yellow, 0 0 20px yellow, 0 0 40px yellow, 0 0 20px yellow;
 }
 .main__presentacion .vsl {
-  padding: 5rem;
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main__presentacion .vsl .video {
   box-shadow: 0 0 65px 10px blue;
-  height: auto;
+  width: 100vw; /* Ancho predeterminado */
+  height: auto; /* Alto predeterminado */
 }
 @media (max-width: 768px) {
   .main__presentacion .main__presentacion {
     max-width: 100vw;
-  }
-  .main__presentacion .main__presentacion .vsl .video {
-    width: 700px;
-    height: 395px;
   }
 }
 @media (max-width: 430px) {
@@ -267,18 +268,10 @@
     width: 3rem;
     height: 3rem;
   }
-  .main__presentacion .main__presentacion .vsl .video {
-    width: 340px;
-    height: 190px;
-  }
 }
 @media (max-width: 425px) {
   .main__presentacion .main__presentacion {
-    max-width: 100vw;
-    padding: 0.3rem;
-  }
-  .main__presentacion .main__presentacion p {
-    font-size: 1rem;
+    width: 100vw;
   }
   .main__presentacion .main__presentacion .redes {
     width: 15em;
@@ -289,9 +282,11 @@
     width: 3rem;
     height: 3rem;
   }
+  .main__presentacion .main__presentacion .vsl {
+    width: 100vw;
+  }
   .main__presentacion .main__presentacion .vsl .video {
-    width: 354px;
-    height: 200px;
+    width: 100;
   }
 }
 

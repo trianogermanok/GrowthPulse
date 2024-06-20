@@ -1,4 +1,5 @@
 .contenedor{
     @include conteiner-flex-column;
     overflow: hidden;
+    width: 100vw;
 }
